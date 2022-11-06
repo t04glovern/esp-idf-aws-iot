@@ -19,6 +19,9 @@
   # Build project
   platformio run
 
+  # If you get an error `Kconfig.projbuild' not found (in 'source "$COMPONENT_KCONFIGS_PROJBUILD"').`, run this command
+  pip3 uninstall kconfiglib
+
   # Upload firmware
   platformio run --target upload
   ```
